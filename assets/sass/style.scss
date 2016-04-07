@@ -1,6 +1,10 @@
 // Bootstrap custom variables
 
 // Bootstrap
-@import "../../bower_components/bootstrap/scss/bootstrap";
+@import "vendor/custom-bootstrap";
+@import "./../../bower_components/bootstrap/scss/bootstrap";
 
 // General
+@import "variables";
+@import "helpers/placeholders";
+@import "global";

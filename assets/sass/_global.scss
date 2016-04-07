@@ -1,0 +1,27 @@
+// Global Styles
+
+h1 {
+  @extend .text-xs-center;
+}
+
+.vinta {
+  @extend .m-y-3;
+}
+
+.vinta-box {
+  @include make-row();
+  @extend %highlight, .m-y-2, .m-x-auto;
+
+  .box-item {
+    @include make-col();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col-span(4);
+    }
+  }
+}
+
+.item {
+  @extend .p-a-1;
+  background-color: $color-pink;
+}
